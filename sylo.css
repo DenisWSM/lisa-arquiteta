@@ -1,0 +1,377 @@
+*{
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Lato&display=swap');
+
+.navega{
+  width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction:row;
+    box-shadow: 0px 0px 10px #000;
+    position: fixed;
+    z-index: 50;
+    
+}
+#logo {
+
+position: relative;
+margin-left: 45px;
+
+}
+.menu_nav{
+
+    color:#fff;
+    display: flex;
+flex-direction: row;
+left: 50%;
+list-style: none;
+text-align: justify;
+font-family: 'Dosis', sans-serif;
+margin-top: 15px;
+
+}
+#botao_navega{
+
+display: none;
+    z-index: 50;
+    
+}
+
+
+.menu_nav    a{
+  position: relative;
+  margin-left: 20px;
+  margin-top: 30px;
+  padding: 8px;
+  text-decoration: none;
+}
+
+.menu_nav   a:hover {
+  padding: 8px;
+  
+    background-color: rgb(70, 68, 68);
+     
+  }
+
+
+
+  .cabecalho{
+    /*background-color: rgb(189, 196, 196);*/
+    background: linear-gradient(to bottom right ,rgb(148, 145, 145),rgb(245, 243, 241));
+    background-image: url('fundo_planta.jpg');
+    background: cover;
+    width: 100%;
+   padding-top: 30px;
+   padding-bottom: 20px;
+   padding-left: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+   justify-content:space-around ;
+   align-items: baseline;
+
+  
+   
+  }
+  
+  #lisa_capa img{
+    background-color:transparent;
+   margin-top: 40px;
+    width: 300px;
+    position: relative;
+    margin-left: 3px;
+
+    
+
+  }
+
+ 
+  .lisa_cards img{
+width: 80vh;
+
+margin-left: 5px;
+margin-right: 5px;
+margin-top: 20px;
+background-color: transparent;
+
+
+ 
+  }
+
+
+
+  #rubrica img{
+    width: 100px;
+    height: 100px;
+    position:relative;
+    margin-left: 60px;
+    margin-right: 20px;   
+    background-color:transparent;
+   
+    
+      }
+
+
+
+      .sobre_sec{
+       background-color: #fff;
+       background-image: url('img/lisa_campo.png');
+       background-repeat: no-repeat;
+       background-position: right bottom;
+        width: 100%;        
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+       
+        margin-top: 20px;
+        margin-left: 20px;
+        padding-bottom: 75px;;
+          
+        
+     }
+
+   
+      
+      #lisa_sobre img{
+        display: flexbox;
+        width: 270px;
+        height: 270px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 40px;
+        background-color: aqua;
+        border-radius: 50%;
+        
+          }
+
+      #texto_sobre {
+           width:80vh;
+           margin-left: 20px;
+            text-align: justify;
+            font-family: 'Dosis', sans-serif;
+            font-size: 12pt;
+            color: rgb(44, 43, 43);
+          }
+
+      #texto_sobre h1{
+        font-family: 'Dosis', sans-serif;
+        font-weight:300;
+        font-size: 20pt;
+        color:black;
+        
+      }   
+      
+      #lisa_frase {
+               
+        padding-top: 40px;;
+      height: 80px;
+      width: 300px;
+      margin-left: 40px;
+      text-align: center;
+            
+      }
+
+      #lisa_frase p{
+       
+            margin-left: 30px;
+            font-family: 'Dosis', sans-serif;
+            font-size: 20pt;
+            color:rgb(151, 143, 143);
+          }          
+
+#projetos_sec {
+
+
+  background-color: rgb(10, 10, 10);
+  color: #fff;
+  padding-bottom: 80px;
+ 
+  padding: 30px 0;
+  position: relative;
+  
+
+
+}
+#projetos_sec p {
+
+  font-family: 'Dosis', sans-serif;
+  font-size: 20pt;
+  text-align: center;
+  text-decoration: underline;
+}
+
+div#quad { 
+ 
+  background-color: rgb(0, 0, 0); 
+  font-size: 0; 
+  width: 60%; 
+  margin: 0 auto;
+  box-shadow: 0 0 12px rgba(0,0,0,0.8);
+}
+div#quad figure { 
+  margin: 0; width: 33%; 
+  height: auto; transition: 1s; 
+  display: inline-block; 
+  position: relative; overflow: hidden; 
+}
+div#quad figure:hover { cursor: pointer; z-index: 4; }
+div#quad figure img { width: 100%; height: auto; }
+div#quad figure:nth-child(1) { transform-origin: top left; }
+div#quad figure:nth-child(2) { transform-origin: top right; }
+div#quad figure:nth-child(3) { transform-origin: top right; }
+div#quad figure:nth-child(4) { transform-origin: top left; }
+div#quad figure:nth-child(5) { transform-origin: bottom right; }
+div#quad figure:nth-child(6) { transform-origin: bottom right; }
+div#quad figure:nth-child(7) { transform-origin: Bottom left; }
+div#quad figure:nth-child(8) { transform-origin: Bottom left; }
+div#quad figure:nth-child(9) { transform-origin: Bottom right; }
+div#quad figure figcaption { 
+  margin: 0; opacity: 0; 
+  background: rgba(0,0,0,0.3); 
+  color: #fff; padding: .3rem; 
+  font-size: 8pt; 
+  position: absolute; 
+  bottom: 0; width: 100%;
+	transition: 1s 1s opacity; 
+}
+.expanded { transform: scale(2); z-index: 5;  }
+div#quad figure.expanded figcaption { opacity: 9; }
+div.full figure:not(.expanded) { pointer-events: none; }
+
+.redesico{
+  width: 30px;
+  padding: 5px;;
+ 
+}
+
+footer{
+  background-color: rgb(65, 63, 63);
+ 
+  padding-top: 60px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-family: 'Dosis', sans-serif;
+}
+footer h2{
+  font-size: 15pt;
+ 
+}
+#enderec{
+    display: flex;
+  width: 45vh;
+  
+}
+  /*quebra de layout*/
+
+  @media (max-width:802px) {
+
+
+
+    .navega{
+        
+        display:flex;
+        flex-direction:column;        
+        flex-wrap: wrap;             
+      
+        
+    }
+    
+    label {
+      position:fixed; 
+     padding-left: 5px;
+     padding-right: 5px;
+     margin-left: 5px;
+     margin-top: 5px;    
+     border-radius: 3px;
+     background-color: rgb(59, 57, 57);
+      font-size: 30px;
+      color: #fff;
+      cursor: pointer;
+      
+    z-index: 51;
+     
+      }
+    
+  
+    .menu_nav{
+      
+        width: 91% ;
+        text-align: center;
+        display:none;
+        flex-direction: column;
+        background-color: black;
+        top: 50px;
+        left: 0;
+        z-index: 3;
+        
+       
+        
+    }
+
+    .menu_nav  a {
+    
+
+        margin-left: -20px;
+        margin-top: 10px;
+        display: none;
+       
+      }
+
+      .menu_nav  a:hover {
+      
+        background-color: rgb(70, 68, 68);
+        transition: 0.5s;
+         
+      }
+
+    
+
+      
+
+      #botao_navega:checked ~ .menu_nav{
+
+      
+            display: flex;
+            
+            padding-bottom: 20px; 
+           
+                       
+       transition: all 4s;
+    }
+
+    #botao_navega:checked ~ .menu_nav a{
+
+      display: flex;
+  
+      margin-top: 10px;;
+      padding-left: 15vh;
+      padding-right: 15vh;
+      padding-top: 3px;
+      padding-bottom: 2px;
+          
+      
+  
+}
+
+    .lisa_cards img{
+      width: 45vh;
+      
+      
+           
+       
+        }
+        #texto_sobre {
+          width:40vh;
+          
+         }
+     
+  }
+  
+  
